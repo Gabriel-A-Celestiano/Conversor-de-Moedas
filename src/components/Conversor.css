@@ -1,0 +1,87 @@
+.Conversor .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                5px 5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.Conversor .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+    filter: grayscale(60%);
+}
+
+.Conversor .card .box:hover {
+    filter: grayscale(0);
+}
+
+.Conversor .card .box .img {
+    width: 100%;
+    height: 50%;
+    
+}
+
+.Conversor:nth-child(1) .card .box .img {
+    background-image: url(../img/Flag-one.png);
+    background-size: cover; 
+    
+}
+
+.Conversor:nth-child(2) .card .box .img {
+    background-image: url(../img/Flag-two.png);
+    background-size: cover; 
+}
+
+.Conversor:nth-child(3) .card .box .img {
+    background-image: url(../img/Flag-three.png);
+    background-size: cover; 
+}
+
+.Conversor .card .box .content {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.Conversor .card .box .content input {
+    background-color: inherit;
+}
+
+.Conversor .card .box .content input,
+.Conversor .card .box .content button {
+    width: 90%;
+    margin: 2% auto;
+    padding: 2% 0;
+
+    border: none;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    outline: none;
+}
+
+.Conversor .card .box .content button {
+    transition: 2s;
+}
+
+.Conversor .card .box .content button:hover {
+    background-color: rgba(0,0,0,0.1);
+}
